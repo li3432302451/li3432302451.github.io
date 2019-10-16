@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="#1.主键约束:Primary Key什么是主键,一般满足两个条件:1.不为空 2.不重复主键会自带索引,以便更快捷的查找,主键用来唯一标识一行数据（主键一般都是无意义的字段）为什么不把身份证号或者手机号设置成主键呢?它们都满足主键的条件!索引的优点是便于查找,缺点则是修改非常消耗时间,而身份证号和手机号是不可以错的,所以索引一般会放在毫无意义的字段上,即使出错的也不需要修改 2.唯一约束:uni">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/10/16/第二章/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#1.主键约束:Primary Key什么是主键,一般满足两个条件:1.不为空 2.不重复主键会自带索引,以便更快捷的查找,主键用来唯一标识一行数据（主键一般都是无意义的字段）为什么不把身份证号或者手机号设置成主键呢?它们都满足主键的条件!索引的优点是便于查找,缺点则是修改非常消耗时间,而身份证号和手机号是不可以错的,所以索引一般会放在毫无意义的字段上,即使出错的也不需要修改 2.唯一约束:uni">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-16T11:36:56.104Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="#1.主键约束:Primary Key什么是主键,一般满足两个条件:1.不为空 2.不重复主键会自带索引,以便更快捷的查找,主键用来唯一标识一行数据（主键一般都是无意义的字段）为什么不把身份证号或者手机号设置成主键呢?它们都满足主键的条件!索引的优点是便于查找,缺点则是修改非常消耗时间,而身份证号和手机号是不可以错的,所以索引一般会放在毫无意义的字段上,即使出错的也不需要修改 2.唯一约束:uni">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,106 +154,146 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-第二章" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#<br>1.主键约束:Primary Key<br>什么是主键,一般满足两个条件:1.不为空 2.不重复<br>主键会自带索引,以便更快捷的查找,主键用来唯一标识一行数据（主键一般都是无意义的字段）<br>为什么不把身份证号或者手机号设置成主键呢?它们都满足主键的条件!<br>索引的优点是便于查找,缺点则是修改非常消耗时间,而身份证号和手机号是不可以错的,所以索引一般会放在毫无意义的字段上,即使出错的也不需要修改</p>
+<p>2.唯一约束:unique<br>确保该字段不可以重复,但值可以为NULL,保证唯一性,即使值是NULL,也会只有一个NULL.</p>
+<p>3.外键约束:FOREIGN KEY<br>主外键对应,目的是减少数据重复.<br>主键对应外键,外键依附于主键.</p>
+<p>在一个学生信息表,每位学生都对应一个老师,而一个班级的学生会对应同一个老师,如果在每一位学生后面都写上老师信息,那数据重复太多,消耗时间,一般这个时候将学生id设置为外键,将老师id设置为主键.<br>4.默认值约束:DEFAULT<br>在没有输入内容的时候,它会自动添加个默认值</p>
+<p>5.非空约束:NOT NULL<br>保证该字段的内容不为空<br>AUTO_INCREMENT<br>自动编号,只可以设置在int类型上</p>
+<p>E–R图<br>矩形—–表<br>椭圆—–字段<br>菱形—–关系</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/16/第二章/" class="archive-article-date">
-  	<time datetime="2019-10-16T11:33:44.918Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/16/第二章/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/16/第四章查询1/" class="archive-article-date">
-  	<time datetime="2019-10-16T11:00:36.428Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/16/第三章2/" class="archive-article-date">
-  	<time datetime="2019-10-16T05:50:07.767Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/16/第四章查询1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/16/第三章/" class="archive-article-date">
-  	<time datetime="2019-10-16T05:45:43.499Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-16</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -272,8 +316,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

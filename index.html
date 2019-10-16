@@ -152,6 +152,59 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-第二章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#<br>1.主键约束:Primary Key<br>什么是主键,一般满足两个条件:1.不为空 2.不重复<br>主键会自带索引,以便更快捷的查找,主键用来唯一标识一行数据（主键一般都是无意义的字段）<br>为什么不把身份证号或者手机号设置成主键呢?它们都满足主键的条件!<br>索引的优点是便于查找,缺点则是修改非常消耗时间,而身份证号和手机号是不可以错的,所以索引一般会放在毫无意义的字段上,即使出错的也不需要修改</p>
+<p>2.唯一约束:unique<br>确保该字段不可以重复,但值可以为NULL,保证唯一性,即使值是NULL,也会只有一个NULL.</p>
+<p>3.外键约束:FOREIGN KEY<br>主外键对应,目的是减少数据重复.<br>主键对应外键,外键依附于主键.</p>
+<p>在一个学生信息表,每位学生都对应一个老师,而一个班级的学生会对应同一个老师,如果在每一位学生后面都写上老师信息,那数据重复太多,消耗时间,一般这个时候将学生id设置为外键,将老师id设置为主键.<br>4.默认值约束:DEFAULT<br>在没有输入内容的时候,它会自动添加个默认值</p>
+<p>5.非空约束:NOT NULL<br>保证该字段的内容不为空<br>AUTO_INCREMENT<br>自动编号,只可以设置在int类型上</p>
+<p>E–R图<br>矩形—–表<br>椭圆—–字段<br>菱形—–关系</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/16/第二章/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-第四章查询1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
