@@ -152,6 +152,66 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-第三章2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 第三章2<br>date: 2019-10-16 13:50:07<br>tags:<br>—#<br>添加数据<br>方法1：<br>INSERT INTO s_stu(name,age,sex) VALUES(值1,值2,值3);<br>INSERT INTO s_stu(name,age,sex) VALUES(值1,值2,值3);<br>INSERT INTO s_stu(name,age,sex) VALUES(值1,值2,值3);<br>INSERT INTO s_stu(name,age,sex) VALUES(值1,值2,值3);<br>方法2：<br>INSERT INTO s_stu(name,age,sex) VALUES(值1,值2,值3)，<br>(值1,值2,值3)，<br>(值1,值2,值3)，<br>(值1,值2,值3)；</p>
+<p>大于等于：<br>将年龄大于等于19周岁的同学设置为女生<br>UPDATE s_stu set sex = ‘女’ WHERE age &gt;=19;</p>
+<p>大于：<br>将年龄大于19周岁的同学设置为男生<br>UPDATE s_stu set sex = ‘男’ WHERE age &gt;19;</p>
+<p>不等于：<br>将年龄不等于18周岁的同学，设置为18周岁<br>UPDATE s_stu set age = 18 WHERE age != 18;</p>
+<p>null值<br>将年龄不等于18周岁的同学的性别设置为null;<br>UPDATE s_stu set sex = null WHERE age !=18;</p>
+<p>判断null值<br>将性别为null的同学的年龄都减掉40;<br>UPDATE s_stu set age = age - 40 where sex is null;</p>
+<p>and并且<br>将性别为空并且已经成年的同学，性别改为女生<br>UPDATE s_stu set sex = ‘女’ WHERE sex is null AND age&gt;=18;</p>
+<p>or或<br>将id为10和11的同学的性别，年龄都设置为空<br>update s_stu set sex = null,age = null WHERE id = 10 OR id =11;</p>
+<p>between and在两值之间包括两边的值<br>将年龄为18到20之间的同学的性别改为已成年<br>UPDATE s_stu set sex = ‘已成年’ where     age BETWEEN 18 AND 20;</p>
+<p>%:任何个任意字符<br>将所有姓王的同学，都设置为女生<br>UPDATE s_stu set sex = ‘女’ WHERE name LIKE ‘王%’;</p>
+<p>下划线（ _ ）：一个任意字符<br>删掉姓王，并且名字只有一个字的同学信息<br>DELETE FROM s_stu where name LIKE ‘王_’;</p>
+<p>in:列表中的任意一个值（语法严谨最好不用）<br>将年龄为18,19,20的同学，年龄改为16<br>update s_stu set age = 16 WHERE age in (18,19,20);</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/16/第三章2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-第三章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
